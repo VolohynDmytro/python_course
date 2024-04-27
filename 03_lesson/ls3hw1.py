@@ -11,7 +11,7 @@ if operation == '*':
     print(result)
 
 elif operation == '/' and num2_input == 0:
-    print(' На ноль делится')
+    print('На ноль делится')
 
 elif operation == '/':
     result = num1_input / num2_input
