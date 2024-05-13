@@ -1,4 +1,4 @@
-def common_elements():
+def common_elements() -> set:
     list_one = []
     list_two = []
     for i in range(100):
@@ -8,9 +8,10 @@ def common_elements():
     for i in range(100):
         if i % 5 == 0:
             list_two.append(i)
-    final_list = list(set(list_one) & set(list_two))
-    return final_list
+    final_set = set(list_one) & set(list_two)
+    return final_set
 
 
-assert common_elements() == [0, 75, 45, 15, 90, 60, 30]
-print('all good')
+if __name__ == "__main__":
+    assert common_elements() == {0, 75, 45, 15, 90, 60, 30}
+    print('all good')
