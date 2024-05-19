@@ -7,8 +7,9 @@ def add_one(some_list: list) -> list:
     return final_list
 
 
-assert add_one([1, 2, 3, 7]) == [1, 2, 3, 8]
-assert add_one([9, 9, 9]) == [1, 0, 0, 0]
-assert add_one([0]) == [1]
-assert add_one([9]) == [1, 0]
-print("ОК")
+if __name__ == "__main__":
+    assert add_one([1, 2, 3, 7]) == [1, 2, 3, 8]
+    assert add_one([9, 9, 9]) == [1, 0, 0, 0]
+    assert add_one([0]) == [1]
+    assert add_one([9]) == [1, 0]
+    print("ОК")

@@ -7,8 +7,9 @@ def is_palindrome(text: str) -> bool:
         return False
 
 
-assert is_palindrome('A man, a plan, a canal: Panama') == True
-assert is_palindrome('0P') == False
-assert is_palindrome('a.') == True
-assert is_palindrome('aurora') == False
-print("ОК")
+if __name__ == "__main__":
+    assert is_palindrome('A man, a plan, a canal: Panama') == True
+    assert is_palindrome('0P') == False
+    assert is_palindrome('a.') == True
+    assert is_palindrome('aurora') == False
+    print("ОК")
